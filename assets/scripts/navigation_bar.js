@@ -21,27 +21,6 @@ let setActiveNavbarItem = function()
 
 setActiveNavbarItem();
 
-// Theme code
-let currentTheme = (window.localStorage.getItem("theme") || "dark");
-let themeButton = document.getElementById("theme-button");
-
-let setTheme = function()
-{
-	document.documentElement.setAttribute("data-theme", currentTheme);
-}
-
-let changeTheme = function()
-{
-	currentTheme = (currentTheme == "dark") ? "light" : "dark";
-	setTheme(currentTheme);
-
-	window.localStorage.setItem("theme", currentTheme);
-}
-
-themeButton.onclick = changeTheme;
-
-setTheme();
-
 // Disable transition until page load
 $(window).on("load", function()
 {
