@@ -1,0 +1,101 @@
+@import "footer.css";
+@import "navigation_bar.css";
+
+:root
+{
+	--body-background: rgb(255, 255, 255);
+	--body-text: rgb(90, 90, 90);
+
+	--navbar-background: rgb(52, 58, 64);
+	--navbar-text: rgb(255, 255, 255);
+	--navbar-text-inactive: rgba(255, 255, 255, 0.5);
+	--navbar-text-hover: rgb(220, 220, 220);
+	--navbar-link: rgb(255, 255, 255);
+	--navbar-link-background-mobile: rgb(73, 81, 89);
+
+	--card-background: rgb(232, 232, 232);
+	--card-text: rgb(90, 90, 90);
+
+	--button-background: rgb(210, 210, 210);
+	--button-text: rgb(90, 90, 90);
+	--button-hover: rgb(190, 190, 190);
+
+	--link: rgb(0, 123, 255);
+
+	--shadow-color: rgba(0, 0, 0, 0.5);
+	--outline-color: rgba(0, 0, 0, 0.1);
+
+	--transition-time: 500ms;
+}
+
+[data-theme="dark"]
+{
+	--body-background: rgb(25, 27, 29);
+	--body-text: rgb(238, 238, 238);
+
+	--navbar-background: rgb(58, 58, 58);
+
+	--card-background: rgb(42, 44, 46);
+	--card-text: rgb(255, 255, 255);
+
+	--button-background: rgb(37, 38, 39);
+	--button-text: rgb(238, 238, 238);
+	--button-hover: rgb(47, 48, 49);
+
+	--outline-color: rgba(255, 255, 255, 0.1);
+}
+
+html, body
+{
+	height: 100%;
+}
+
+.preload
+{
+	transition: none !important;
+}
+
+body
+{
+	display: flex;
+	flex-direction: column;
+
+	margin: 0px;
+	padding: 0px;
+
+	background-color: var(--body-background);
+	color: var(--body-text);
+
+	transition: background-color var(--transition-time), color var(--transition-time);
+}
+
+.everything-container
+{
+	flex: 1 0 auto;
+}
+
+.content-container
+{
+	margin: 5rem auto;
+
+	width: 80%;
+}
+
+.title-container
+{
+	text-align: center;
+}
+
+.featurette-divider
+{
+	border-top: 1px solid var(--outline-color);
+}
+
+/* MOBILE */
+@media (max-aspect-ratio: 5/4)
+{
+	.content-container
+	{
+		width: 100%;
+	}
+}

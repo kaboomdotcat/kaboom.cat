@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+	{%- include head.html -%}
+	<body class="preload">
+		<div class="everything-container">
+			{%- include navbar.html -%}
+
+			<div class="content-container">
+				{{ content }}
+			</div>
+		</div>
+
+		{%- include footer.html -%}
+	</body>
+</html>
