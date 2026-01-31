@@ -1,84 +1,58 @@
-@import "footer.css";
-@import "navigation_bar.css";
-
-:root
+*
 {
-	--body-background: rgb(25, 27, 29);
-	--body-text: rgb(238, 238, 238);
-
-	--navbar-background: rgb(58, 58, 58);
-	--navbar-text: rgb(255, 255, 255);
-	--navbar-text-inactive: rgba(255, 255, 255, 0.5);
-	--navbar-text-hover: rgb(220, 220, 220);
-	--navbar-link: rgb(255, 255, 255);
-	--navbar-link-background-mobile: rgb(73, 81, 89);
-
-	--card-background: rgb(42, 44, 46);
-	--card-text: rgb(255, 255, 255);
-
-	--button-background: rgb(37, 38, 39);
-	--button-text: rgb(238, 238, 238);
-	--button-hover: rgb(47, 48, 49);
-
-	--link: rgb(0, 123, 255);
-
-	--shadow-color: rgba(0, 0, 0, 0.5);
-	--outline-color: rgba(255, 255, 255, 0.1);
-
-	--transition-time: 500ms;
+	font-family: "Roboto", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 600;
+	font-style: normal;
+	font-variation-settings: "wdth" 100;
 }
 
 html, body
 {
-	height: 100%;
+	margin: 0px;
+
+	background-color: rgb(12, 12, 12);
+	color: white;
 }
 
-.preload
+.header
 {
-	transition: none !important;
+	height: 8rem;
+
+	align-content: center;
+
+	background-color: rgb(24, 24, 24);
 }
 
-body
+.header-title
 {
-	display: flex;
-	flex-direction: column;
+	font-size: 3rem;
+	text-align: center;
 
 	margin: 0px;
-	padding: 0px;
-
-	background-color: var(--body-background);
-	color: var(--body-text);
-
-	transition: background-color var(--transition-time), color var(--transition-time);
 }
 
-.everything-container
+.content
 {
-	flex: 1 0 auto;
-}
+	margin: 4rem;
 
-.content-container
-{
-	margin: 5rem auto;
-
-	width: 80%;
-}
-
-.title-container
-{
+	align-content: center;
 	text-align: center;
 }
 
-.featurette-divider
+.link a
 {
-	border-top: 1px solid var(--outline-color);
+	text-decoration: none;
+
+	color: darkcyan;
 }
 
-/* MOBILE */
-@media (max-aspect-ratio: 5/4)
+.link a:visited
 {
-	.content-container
-	{
-		width: 100%;
-	}
+	color: purple;
+}
+
+.link-description
+{
+	margin-bottom: 2rem;
 }

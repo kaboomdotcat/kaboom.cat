@@ -1,15 +1,25 @@
 <!DOCTYPE html>
-<html lang="{{ page.lang | default: site.lang | default: "en" }}">
-	{%- include head.html -%}
-	<body class="preload">
-		<div class="everything-container">
-			{%- include navbar.html -%}
+<head>
+	<title>kaboomdotcat</title>
 
-			<div class="content-container">
-				{{ content }}
-			</div>
+	<!-- Include style sheet -->
+	<link rel="stylesheet" href="/assets/styles/main.css">
+
+	<!-- Include Roboto font -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<html>
+	<body>
+		<!-- Header -->
+		<div class="header">
+			<p class="header-title">kaboomdotcat</p>
 		</div>
 
-		{%- include footer.html -%}
+		<!-- Content -->
+		<div class="content">
+			{{ content }}
+		</div>
 	</body>
 </html>

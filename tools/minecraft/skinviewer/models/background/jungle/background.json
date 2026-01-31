@@ -1,0 +1,9 @@
+{
+	"enable-directional-light": true,
+	"skybox-textures": {
+		"night": "night",
+		"sunrise": "sunrise",
+		"morning": "morning",
+		"noon": "noon"
+	}
+}
